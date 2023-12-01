@@ -50,6 +50,36 @@
           }
         }
       }
+    },
+    "/currentTrack": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/fullTrack": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/trackLogs": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -64,6 +94,40 @@
           "properties": {
             "type": "object",
             "properties": {
+              "ip": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "example": "string"
+                  },
+                  "description": {
+                    "type": "string",
+                    "example": "連線IP"
+                  },
+                  "nullable": {
+                    "type": "boolean",
+                    "example": false
+                  }
+                }
+              },
+              "version": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "example": "string"
+                  },
+                  "description": {
+                    "type": "string",
+                    "example": "版本"
+                  },
+                  "nullable": {
+                    "type": "boolean",
+                    "example": false
+                  }
+                }
+              },
               "username": {
                 "type": "object",
                 "properties": {
